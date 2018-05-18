@@ -6,14 +6,14 @@
  */
 import React, { Component } from 'react';
 
-import StudyMapTable from './components/StudyMapTable'
+import TaskTplTable from './components/TaskTplTable'
 
 import { Tabs } from 'antd';
 
-// import styles from './studymap.less';
+// import styles from './tasktpl.less';
 
 const TabPane = Tabs.TabPane;
-class StudyMapmodule extends Component {
+class TaskTplmodule extends Component {
     callback = (key) => {
         console.log(key);
     }
@@ -21,7 +21,7 @@ class StudyMapmodule extends Component {
         return (
             <Tabs defaultActiveKey="1" onChange={this.callback}>
                 <TabPane tab="选项卡一" key="1">
-                    <StudyMapTable />
+                    <TaskTplTable />
                 </TabPane>
                 <TabPane tab="选项卡二" key="2">选项卡二内容</TabPane>
             </Tabs>
@@ -29,4 +29,4 @@ class StudyMapmodule extends Component {
     }
 }
 
-export default StudyMapmodule;
+export default TaskTplmodule;

@@ -29,7 +29,7 @@ const columns = [{
         <span>
             <a>Action 一 {record.name}</a>&nbsp;&nbsp;
             <span className="ant-divider" />
-            <Link to={{ pathname: "/app/studyMapModule/detail" }} replace>detail</Link> &nbsp;&nbsp;
+            <Link to={{ pathname: "/app/taskTplModule/detail" }} replace>detail</Link> &nbsp;&nbsp;
             <span className="ant-divider" />
             <a className="ant-dropdown-link">
                 More actions <Icon type="down" />
@@ -49,7 +49,7 @@ for (let i = 0; i < 46; i++) {
 }
 
 
-class StudyMapTable extends Component {
+class TaskTplTable extends Component {
     callback = (key) => {
         console.log(key);
     }
@@ -65,4 +65,4 @@ class StudyMapTable extends Component {
 }
 
 
-export default StudyMapTable;
+export default TaskTplTable;

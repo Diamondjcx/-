@@ -61,6 +61,6 @@ export const menus = [
         key: '/app/cssModule', title: 'cssModule', icon: 'star',
     },
     {
-        key: '/app/studyMapmodule', title: 'studyMapmodule', icon: 'star',
+        key: '/app/taskTplmodule', title: 'taskTplmodule', icon: 'star',
     }
 ];

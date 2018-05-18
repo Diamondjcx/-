@@ -32,11 +32,11 @@ import Bundle from '../components/widget/Bundle';
 import Cssmodule from '../components/cssmodule';
 
 // 学习地图
-import StudyMapmodule from '../components/studyMapmodule';
+import TaskTplmodule from '../components/taskTplmodule';
 // 详情
-import Detail from '../components/studyMapmodule/components/detail';
+import Detail from '../components/taskTplmodule/components/detail';
 // 学习地图路由
-// import StudyMapRoute from '../components/studyMapmodule/route'
+// import TaskTplRoute from '../components/taskTplmodule/route'
 
 const WysiwygBundle = (props) => (
     <Bundle load={Wysiwyg}>
@@ -81,8 +81,8 @@ export default class CRouter extends Component {
 
                 <Route exact path="/app/cssModule" component={Cssmodule} />
 
-                <Route exact path="/app/studyMapModule" component={StudyMapmodule} />
-                <Route exact path="/app/studyMapModule/detail" component={Detail} />
+                <Route exact path="/app/taskTplModule" component={TaskTplmodule} />
+                <Route exact path="/app/taskTplModule/detail" component={Detail} />
 
                 <Route render={() => <Redirect to="/404" />} />
             </Switch>

@@ -1,13 +1,13 @@
 export default {
-    name: "studyMapmodule",
+    name: "taskTplmodule",
     breadcrumbName: "学习地图",
-    path: 'studyMapmodule',
+    path: 'taskTplmodule',
     getIndexRoute(location, cb){
         require.ensure([], (require) => {
             cb(null, {
-                component: require('./container/studyMapContainer')
+                component: require('./container/taskTplContainer')
             })
-        }, './Container/studyMapList');
+        }, './Container/taskTplList');
     },
     childRoutes: [
         {
@@ -17,9 +17,9 @@ export default {
             getComponent(location, cb){
                 require.ensure([], (require)=>{
                     cb(null, {
-                        component: require('./container/studyMapContainer')
+                        component: require('./container/taskTplContainer')
                     })
-                }, './Container/studyMapList');
+                }, './Container/taskTplList');
             }
         }
     ]
