@@ -43,17 +43,27 @@ for (let i = 0; i < 46; i++) {
     data.push({
         key: i,
         name: `Edward King ${i}`,
-        age: 32,
+        age: 321,
         address: `London, Park Lane no. ${i}`,
     });
 }
 
+const tablePagnation = {
+    showSizeChanger : true,
+    pageSizeOption : ['10','50','100'],
+    showTotal: function(total) {
+        const start = this.pageSize * (this.current - 1) + 1;
+        const end = this.current == this.pageCount ? total : start + (this.pageSize) + 1;
+        return `找到${total}条记录，显示${start}到${end}条`;
+    }
+}
 
 class TaskTplTable extends Component {
     callback = (key) => {
         console.log(key);
     }
     render() {
+        const pagnation = { ...tablePagnation, ...this.props.pagnation};
         return (
            <div>
                 <SearchDiv />
